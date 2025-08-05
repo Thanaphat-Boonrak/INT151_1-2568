@@ -5,5 +5,6 @@ function longestWord(sentence) {
     (temp, word) => (word.length > temp.length ? word : temp),
     ""
   );
+
 }
 module.exports = longestWord;

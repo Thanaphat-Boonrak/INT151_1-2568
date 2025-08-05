@@ -1,0 +1,14 @@
+ผมได้นำ WorkShop ของอาจารย์มาต่อยอดโดยหา Solution ที่ไวและดูได้ง่าย หรือ การทำ Clean Code
+(รวมถึงการ Refactor Code) โดยปกติผมจะใช้ if else ธรรมดาผสมกับ Method ของตัว string เอง
+แต่ในงานนี้ได้ทำการใช้ Functional Programming (reduce) ซึ่ง reduce จะเป็นการใช้เพื่อหาค่าเดียวใน Array
+เช่น numberArray = [1,2,3,4,5] เราสามารถใช้ reduce เพื่อรวมทุกตัวใน array เป็นตัวเดียวกันก็คือนำมาบวกกลายเป็น 15 
+ซึ่งปกติแล้วถ้าเราไม่ใช้ reduce ก็จะใช้ loop ธรรมดา ก็จะเป็น 
+sum = 0
+for (let i of numberArray){
+    sum += i
+}
+
+แต่ถ้าเป็น reduce ก็จะลดการเขียนลงไปอีกก็จะเป็น
+ sum = numberArray.reduce((previousItem,currentItem) => prepreviousItem + currentItem,0)
+
+ื
